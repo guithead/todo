@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+/*VARIABLES*/
+/*MIXINS*/
+/*STYLES*/
+body {
+  min-height: 100vh;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffc85c;
+  color: #59886b;
+  overflow-x: hidden;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Bungee', sans-serif;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  margin: 0;
+}
+
+input {
+  height: 3rem;
+  background-color: #fff8c1;
+  border: 5px solid #c05555;
+  border-radius: 5px;
+  color: #59886b;
+  margin: 5rem;
+  margin-bottom: 2rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  background-color: #59886b;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+  border: none;
+  -webkit-box-shadow: 1px 2px #000;
+          box-shadow: 1px 2px #000;
+}
+
+button:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media (hover: hover) {
+  button:hover {
+    background-color: #fff8c1;
+    color: black;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.mirror {
+  min-height: 2rem;
+  margin-bottom: 0;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+hr {
+  width: 50%;
+  height: 1px;
+  background: #c05555;
+  border: none;
+}
+
+.list {
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  word-break: break-word;
+}
+
+.list li {
+  width: 16rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #c05555;
+  background-color: #fff8c1;
+}
+
+.close {
+  color: #000;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: #c05555;
+}
+
+@media screen and (max-width: 750px) {
+  input,
+  hr {
+    width: 75%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
