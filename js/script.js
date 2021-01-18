@@ -48,7 +48,7 @@ const updateText = () => (textReflect.textContent = input.value);
 
 input.addEventListener('input', updateText);
 
-// Add input to array/LS, clear inputs
+// Add input to array + LS, clear inputs
 const addToList = () => {
   const inputValue = input.value;
 

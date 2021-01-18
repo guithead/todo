@@ -1,19 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(https://fonts.googleapis.com/css?family=Bungee);
 
-/*VARIABLES*/
+//VARIABLES
 $background: #ffc85c;
 $input-bckg: #fff8c1;
 $text: #59886b;
 $complement: #c05555;
 
-/*MIXINS*/
+//MIXINS
 @mixin width-limit-text {
   max-width: 75%;
   word-wrap: break-word;
 }
 
-/*STYLES*/
+//STYLES
 body {
   min-height: 100vh;
   padding: 1rem;
