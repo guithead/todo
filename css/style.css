@@ -92,7 +92,12 @@ button:focus {
 
 .far {
   font-size: 1.4rem;
-  margin-right: 0.3rem;
+  margin-right: 0.4rem;
+}
+
+.close {
+  color: #c05555;
+  font-size: 1.3rem;
 }
 
 @media (hover: hover) {
