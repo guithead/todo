@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(https://fonts.googleapis.com/css?family=Bungee);
+/*@mixin width-limit-text {
+  max-width: 75%;
+  word-wrap: break-word;
+}*/
 body {
   min-height: 100vh;
   padding: 1rem;
@@ -78,20 +82,6 @@ button:focus {
   }
 }
 
-.mirror {
-  min-height: 2rem;
-  margin-bottom: 0;
-  max-width: 75%;
-  word-wrap: break-word;
-}
-
-hr {
-  width: 50%;
-  height: 1px;
-  background: #c05555;
-  border: none;
-}
-
 .list {
   margin: 0 auto;
   list-style: none;
@@ -114,13 +104,11 @@ hr {
   margin-right: 0.3rem;
 }
 
-.close {
-  color: #c05555;
-}
-
-.close:hover {
-  cursor: pointer;
-  color: black;
+@media (hover: hover) {
+  .close {
+    cursor: pointer;
+    color: black;
+  }
 }
 
 @media screen and (max-width: 750px) {

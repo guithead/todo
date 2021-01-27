@@ -8,10 +8,10 @@ $text: #59886b;
 $complement: #c05555;
 
 //MIXINS
-@mixin width-limit-text {
+/*@mixin width-limit-text {
   max-width: 75%;
   word-wrap: break-word;
-}
+}*/
 
 //STYLES
 body {
@@ -83,19 +83,6 @@ button {
   }
 }
 
-.mirror {
-  min-height: 2rem;
-  margin-bottom: 0;
-  @include width-limit-text;
-}
-
-hr {
-  width: 50%;
-  height: 1px;
-  background: $complement;
-  border: none;
-}
-
 .list {
   margin: 0 auto;
   list-style: none;
@@ -117,9 +104,8 @@ hr {
   margin-right: 0.3rem;
 }
 
-.close {
-  color: $complement;
-  &:hover {
+@media (hover: hover) {
+  .close {
     cursor: pointer;
     color: black;
   }
