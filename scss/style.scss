@@ -61,7 +61,7 @@ button {
   text-transform: uppercase;
   padding: 0.5rem;
   border-radius: 5px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   border: none;
   box-shadow: 1px 2px #000;
   &:active {
@@ -112,17 +112,29 @@ hr {
   }
 }
 
+.far {
+  font-size: 1.4rem;
+  margin-right: 0.3rem;
+}
+
 .close {
-  color: #000;
+  color: $complement;
   &:hover {
     cursor: pointer;
-    color: $complement;
+    color: black;
   }
 }
 
 @media screen and (max-width: 750px) {
-  input,
-  hr {
-    width: 75%;
+  .list li {
+    width: 14rem;
+    padding: 0.6rem;
+    font-size: 1.3rem;
+  }
+
+  input {
+    margin: 2rem;
+    height: 2.3rem;
+    max-width: 75%;
   }
 }

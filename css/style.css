@@ -51,7 +51,7 @@ button {
   text-transform: uppercase;
   padding: 0.5rem;
   border-radius: 5px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   border: none;
   -webkit-box-shadow: 1px 2px #000;
           box-shadow: 1px 2px #000;
@@ -109,19 +109,30 @@ hr {
   background-color: #fff8c1;
 }
 
+.far {
+  font-size: 1.4rem;
+  margin-right: 0.3rem;
+}
+
 .close {
-  color: #000;
+  color: #c05555;
 }
 
 .close:hover {
   cursor: pointer;
-  color: #c05555;
+  color: black;
 }
 
 @media screen and (max-width: 750px) {
-  input,
-  hr {
-    width: 75%;
+  .list li {
+    width: 14rem;
+    padding: 0.6rem;
+    font-size: 1.3rem;
+  }
+  input {
+    margin: 2rem;
+    height: 2.3rem;
+    max-width: 75%;
   }
 }
 /*# sourceMappingURL=style.css.map */

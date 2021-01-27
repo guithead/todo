@@ -2,7 +2,6 @@
   VARIABLES
 */
 const input = document.querySelector('input');
-const textReflect = document.querySelector('.mirror');
 const list = document.querySelector('.list');
 const btn = document.querySelector('button');
 
@@ -26,9 +25,9 @@ const createItems = () => {
     listItem.textContent = todos[i];
 
     //create close icon inside <li>
-    const removeBtn = document.createElement('span');
-    removeBtn.className = 'close';
-    removeBtn.innerHTML = '&#9760; ';
+    const removeBtn = document.createElement('i');
+    removeBtn.classList.add('close', 'far', 'fa-times-circle');
+    //removeBtn.innerHTML = '&#9760; ';
     listItem.prepend(removeBtn);
 
     // add <li> to <ul>
@@ -43,11 +42,6 @@ const createItems = () => {
   }
 };
 
-// Real time text update
-const updateText = () => (textReflect.textContent = input.value);
-
-input.addEventListener('input', updateText);
-
 // Add input to array + LS, clear inputs
 const addToList = () => {
   const inputValue = input.value;
@@ -58,7 +52,6 @@ const addToList = () => {
 
   //reset inputs
   input.value = '';
-  textReflect.textContent = '';
 };
 
 // Add to local storage
