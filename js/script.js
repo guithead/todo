@@ -27,7 +27,6 @@ const createItems = () => {
     //create close icon inside <li>
     const removeBtn = document.createElement('i');
     removeBtn.classList.add('close', 'far', 'fa-times-circle');
-    //removeBtn.innerHTML = '&#9760; ';
     listItem.prepend(removeBtn);
 
     // add <li> to <ul>

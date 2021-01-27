@@ -73,15 +73,6 @@ button:focus {
   outline: none;
 }
 
-@media (hover: hover) {
-  button:hover {
-    background-color: #fff8c1;
-    color: black;
-    outline: none;
-    cursor: pointer;
-  }
-}
-
 .list {
   margin: 0 auto;
   list-style: none;
@@ -105,7 +96,13 @@ button:focus {
 }
 
 @media (hover: hover) {
-  .close {
+  button:hover {
+    background-color: #fff8c1;
+    color: black;
+    outline: none;
+    cursor: pointer;
+  }
+  .close:hover {
     cursor: pointer;
     color: black;
   }

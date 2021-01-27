@@ -74,15 +74,6 @@ button {
   }
 }
 
-@media (hover: hover) {
-  button:hover {
-    background-color: $input-bckg;
-    color: black;
-    outline: none;
-    cursor: pointer;
-  }
-}
-
 .list {
   margin: 0 auto;
   list-style: none;
@@ -105,7 +96,13 @@ button {
 }
 
 @media (hover: hover) {
-  .close {
+  button:hover {
+    background-color: $input-bckg;
+    color: black;
+    outline: none;
+    cursor: pointer;
+  }
+  .close:hover {
     cursor: pointer;
     color: black;
   }
